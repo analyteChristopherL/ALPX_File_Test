@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Experiments>
+	<SimulationExperiment ActiveObjectClassId="1711111014759">
+		<Id>1708601997347</Id>
+		<Name><![CDATA[Simulation]]></Name>
+		<CommandLineArguments/>
+		<InitialSetupCode>if(varShowCharts == true){
+	varCollectData = true;
+}
+if(varCollectData == false){
+	varShowCharts = false;
+}</InitialSetupCode>
+		<MaximumMemory>8192</MaximumMemory>
+		<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+		<CustomGeneratorCode>new Random()</CustomGeneratorCode>
+		<SeedValue>11</SeedValue>
+		<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
+		<VmArgs/>
+		<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+		<Variables>
+			<Variable Class="PlainVariable">
+				<Id>1717575909033</Id>
+				<Name><![CDATA[varSystemCapacity]]></Name>
+				<X>40</X>
+				<Y>290</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[int]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[14]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576070113</Id>
+				<Name><![CDATA[varTrainsFrom0]]></Name>
+				<X>38.018</X>
+				<Y>468.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[String]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA["Harbor"]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576095648</Id>
+				<Name><![CDATA[varTrainsFromX]]></Name>
+				<X>38.018</X>
+				<Y>645.895</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[String]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA["Mine"]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576245203</Id>
+				<Name><![CDATA[varTrainsFrom0MaxVelocity]]></Name>
+				<X>480</X>
+				<Y>468.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[70]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576245205</Id>
+				<Name><![CDATA[varTrainsFromXMaxVelocity]]></Name>
+				<X>480</X>
+				<Y>645.895</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[70]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576300458</Id>
+				<Name><![CDATA[varTrainsFrom0DistributionMin]]></Name>
+				<X>40</X>
+				<Y>928.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[1.5]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576300460</Id>
+				<Name><![CDATA[varTrainsFromXDistributionMin]]></Name>
+				<X>40</X>
+				<Y>1105.895</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[1.5]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576814265</Id>
+				<Name><![CDATA[varTrainsFrom0DistributionMax]]></Name>
+				<X>480</X>
+				<Y>928.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[2.5]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576842189</Id>
+				<Name><![CDATA[varTrainsFrom0DistributionMean]]></Name>
+				<X>920</X>
+				<Y>928.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[2.0]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576867510</Id>
+				<Name><![CDATA[varTrainsFromXDistributionMax1]]></Name>
+				<X>480</X>
+				<Y>1108.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[2.5]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717576867512</Id>
+				<Name><![CDATA[varTrainsFromXDistributionMean1]]></Name>
+				<X>920</X>
+				<Y>1108.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[2.0]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717583264788</Id>
+				<Name><![CDATA[varShowCharts]]></Name>
+				<X>1020</X>
+				<Y>110</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[boolean]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[true]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717583303514</Id>
+				<Name><![CDATA[varCollectData]]></Name>
+				<X>1000</X>
+				<Y>250</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[boolean]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[true]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717746388540</Id>
+				<Name><![CDATA[varTrainsFrom0DefaultPriority]]></Name>
+				<X>970</X>
+				<Y>468.631</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[0.5]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+			<Variable Class="PlainVariable">
+				<Id>1717746388542</Id>
+				<Name><![CDATA[varTrainsFromXDefaultPriority]]></Name>
+				<X>970</X>
+				<Y>645.895</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>false</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>true</ShowLabel>
+				<Properties SaveInSnapshot="true"
+                Constant="false"
+                AccessType="public"
+                StaticVariable="false">
+					<Type><![CDATA[double]]></Type>
+					<InitialValue Class="CodeValue">
+						<Code><![CDATA[1.0]]></Code>
+					</InitialValue>
+				</Properties>
+			</Variable>
+		</Variables>
+		<Presentation>
+			<Text>
+				<Id>1708601997349</Id>
+				<Name><![CDATA[text]]></Name>
+				<X>20</X>
+				<Y>0</Y>
+				<Label>
+					<X>10</X>
+					<Y>0</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-12490271</Color>
+				<Text><![CDATA[RailYardExercise_CrossingLoops]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>24</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Control Type="Slider">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717575895204</Id>
+				<Name><![CDATA[systemCapacitySlider]]></Name>
+				<X>40</X>
+				<Y>140</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="604" Height="102">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<DefaultValueCode>0</DefaultValueCode>
+					<Orientation>HORIZONTAL</Orientation>
+					<MinValue>0</MinValue>
+					<MaxValue>21</MaxValue>
+					<Step>1</Step>
+					<LinkTo>true</LinkTo>
+					<Link>varSystemCapacity</Link>
+				</ExtendedProperties>
+			</Control>
+			<Text>
+				<Id>1717575945312</Id>
+				<Name><![CDATA[text1]]></Name>
+				<X>40</X>
+				<Y>242.273</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[min]]></Text>
+				<TextCode>systemCapacitySlider.getMin()</TextCode>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>18</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>CENTER</Alignment>
+			</Text>
+			<Text>
+				<Id>1717575945314</Id>
+				<Name><![CDATA[text2]]></Name>
+				<X>644.95</X>
+				<Y>242.273</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[max]]></Text>
+				<TextCode>systemCapacitySlider.getMax()</TextCode>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>18</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>CENTER</Alignment>
+			</Text>
+			<Text>
+				<Id>1717575945316</Id>
+				<Name><![CDATA[text3]]></Name>
+				<X>342.475</X>
+				<Y>242.273</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[value]]></Text>
+				<TextCode>systemCapacitySlider.getValue()</TextCode>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>18</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>CENTER</Alignment>
+			</Text>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576035278</Id>
+				<Name><![CDATA[trainsFrom0]]></Name>
+				<X>38.018</X>
+				<Y>380</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFrom0</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576095643</Id>
+				<Name><![CDATA[trainsFromX]]></Name>
+				<X>38.018</X>
+				<Y>557.263</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFromX</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="FileChooser">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576179557</Id>
+				<Name><![CDATA[fileChooser]]></Name>
+				<X>740</X>
+				<Y>40</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="120" Height="20">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor/>
+					<TextColor/>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="11" Style="0"/>
+					<Title>DataBase</Title>
+					<Type><![CDATA[UPLOAD]]></Type>
+					<Filters>.xlsx, .xls</Filters>
+					<FileName>file.txt</FileName>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576245199</Id>
+				<Name><![CDATA[trainsFrom1]]></Name>
+				<X>480</X>
+				<Y>380</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFrom0MaxVelocity</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576245201</Id>
+				<Name><![CDATA[trainsFromX1]]></Name>
+				<X>480</X>
+				<Y>557.263</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFromXMaxVelocity</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576300450</Id>
+				<Name><![CDATA[trainsFrom2]]></Name>
+				<X>40</X>
+				<Y>840</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFrom0DistributionMin</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576300452</Id>
+				<Name><![CDATA[trainsFromX2]]></Name>
+				<X>40</X>
+				<Y>1017.263</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFromXDistributionMin</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576814259</Id>
+				<Name><![CDATA[trainsFrom3]]></Name>
+				<X>480</X>
+				<Y>840</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFrom0DistributionMax</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576842173</Id>
+				<Name><![CDATA[trainsFrom4]]></Name>
+				<X>920</X>
+				<Y>840</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFrom0DistributionMean</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576867499</Id>
+				<Name><![CDATA[trainsFrom5]]></Name>
+				<X>480</X>
+				<Y>1020</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFromXDistributionMax1</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717576867508</Id>
+				<Name><![CDATA[trainsFrom6]]></Name>
+				<X>920</X>
+				<Y>1020</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFromXDistributionMean1</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="CheckBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717583213376</Id>
+				<Name><![CDATA[DisplayCharts]]></Name>
+				<X>980</X>
+				<Y>40</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="150" Height="60">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<TextColor/>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="18" Style="0"/>
+					<LabelText>DisplayCharts</LabelText>
+					<LinkTo>true</LinkTo>
+					<Link>varShowCharts</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="CheckBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717583249335</Id>
+				<Name><![CDATA[CollectData]]></Name>
+				<X>980</X>
+				<Y>180</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="150" Height="60">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<TextColor/>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="18" Style="0"/>
+					<LabelText>CollectData</LabelText>
+					<LinkTo>true</LinkTo>
+					<Link>varCollectData</Link>
+				</ExtendedProperties>
+			</Control>
+			<Text>
+				<Id>1717743135569</Id>
+				<Name><![CDATA[text4]]></Name>
+				<X>90</X>
+				<Y>110</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Number of trains allowed in the system]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>26</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743177152</Id>
+				<Name><![CDATA[text5]]></Name>
+				<X>40</X>
+				<Y>340</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Location name of distance 0]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743216544</Id>
+				<Name><![CDATA[text6]]></Name>
+				<X>40</X>
+				<Y>520</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Location name of distance X]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743234890</Id>
+				<Name><![CDATA[text7]]></Name>
+				<X>430</X>
+				<Y>340</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Maximum speed for trains from distance 0]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743284762</Id>
+				<Name><![CDATA[text8]]></Name>
+				<X>430</X>
+				<Y>520</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Maximum speed for trains from distance X]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743329073</Id>
+				<Name><![CDATA[text9]]></Name>
+				<X>340</X>
+				<Y>740</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Inter arrival time (triangular distribution)]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>28</Size>
+					<Style>1</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743410500</Id>
+				<Name><![CDATA[text10]]></Name>
+				<X>40</X>
+				<Y>800</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Min for distance 0]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743433358</Id>
+				<Name><![CDATA[text11]]></Name>
+				<X>480</X>
+				<Y>800</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Max for distance 0]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743445056</Id>
+				<Name><![CDATA[text12]]></Name>
+				<X>920</X>
+				<Y>800</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Mean for distance 0]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743466124</Id>
+				<Name><![CDATA[text13]]></Name>
+				<X>40</X>
+				<Y>980</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Min for distance X]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743466126</Id>
+				<Name><![CDATA[text14]]></Name>
+				<X>480</X>
+				<Y>980</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Max for distance X]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717743466128</Id>
+				<Name><![CDATA[text15]]></Name>
+				<X>920</X>
+				<Y>980</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Mean for distance X]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717746388485</Id>
+				<Name><![CDATA[trainsFrom7]]></Name>
+				<X>970</X>
+				<Y>380</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFrom0DefaultPriority</Link>
+				</ExtendedProperties>
+			</Control>
+			<Control Type="EditBox">
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Id>1717746388532</Id>
+				<Name><![CDATA[trainsFromX3]]></Name>
+				<X>970</X>
+				<Y>557.263</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+				<BasicProperties Width="280" Height="44">
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<FillColor>-1644806</FillColor>
+					<TextColor>-16777216</TextColor>
+					<Enabled>true</Enabled>
+				</BasicProperties>
+				<ExtendedProperties>
+					<Font Name="Dialog" Size="16" Style="0"/>
+					<LinkTo>true</LinkTo>
+					<Link>varTrainsFromXDefaultPriority</Link>
+				</ExtendedProperties>
+			</Control>
+			<Text>
+				<Id>1717746388535</Id>
+				<Name><![CDATA[text16]]></Name>
+				<X>920</X>
+				<Y>340</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Default Priority for trains from distance 0]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+			<Text>
+				<Id>1717746388538</Id>
+				<Name><![CDATA[text17]]></Name>
+				<X>920</X>
+				<Y>520</Y>
+				<Label>
+					<X>0</X>
+					<Y>-10</Y>
+				</Label>
+				<PublicFlag>true</PublicFlag>
+				<PresentationFlag>true</PresentationFlag>
+				<ShowLabel>false</ShowLabel>
+				<DrawMode>SHAPE_DRAW_2D</DrawMode>
+				<EmbeddedIcon>false</EmbeddedIcon>
+				<Z>0</Z>
+				<Rotation>0.0</Rotation>
+				<Color>-16777216</Color>
+				<Text><![CDATA[Default Priority for trains from distance X]]></Text>
+				<Font>
+					<Name><![CDATA[SansSerif]]></Name>
+					<Size>22</Size>
+					<Style>0</Style>
+				</Font>
+				<Alignment>LEFT</Alignment>
+			</Text>
+		</Presentation>
+		<Parameters>
+			<Parameter>
+				<ParameterName>parSystemCapacity</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varSystemCapacity]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parTrainFromDistance0</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFrom0]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parTrainFromDistanceX</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFromX]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parTrainFrom0MaxVelocity</ParameterName>
+				<ParameterValue Class="CodeUnitValue">
+					<Code><![CDATA[varTrainsFrom0MaxVelocity]]></Code>
+					<Unit Class="SpeedUnits">KPH</Unit>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parTrainFromXMaxVelocity</ParameterName>
+				<ParameterValue Class="CodeUnitValue">
+					<Code><![CDATA[varTrainsFromXMaxVelocity]]></Code>
+					<Unit Class="SpeedUnits">KPH</Unit>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDepartureDistributionFrom0Mean</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFrom0DistributionMean]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDepartureDistributionFrom0Max</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFrom0DistributionMax]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDepartureDistributionFrom0Min</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFrom0DistributionMin]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDepartureDistributionFromXMin</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFromXDistributionMin]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDepartureDistributionFromXMax</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFromXDistributionMax1]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDepartureDistributionFromXMean</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFromXDistributionMean1]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parDisplayGraphs</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varShowCharts]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parCollectData</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varCollectData]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parTrainFrom0DefaultPriority</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFrom0DefaultPriority]]></Code>
+				</ParameterValue>
+			</Parameter>
+			<Parameter>
+				<ParameterName>parTrainFromXDefaultPriority</ParameterName>
+				<ParameterValue Class="CodeValue">
+					<Code><![CDATA[varTrainsFromXDefaultPriority]]></Code>
+				</ParameterValue>
+			</Parameter>
+		</Parameters>
+		<PresentationProperties>
+			<EnableZoomAndPanning>true</EnableZoomAndPanning>
+			<ExecutionMode>realTimeScaled</ExecutionMode>
+			<Title>RailYardExercise_CrossingLoops : Simulation</Title>
+			<EnableDeveloperPanel>true</EnableDeveloperPanel>
+			<ShowDeveloperPanelOnStart>false</ShowDeveloperPanelOnStart>
+			<RealTimeScale>1.0</RealTimeScale>
+		</PresentationProperties>
+		<ModelTimeProperties>
+			<StopOption>Never</StopOption>
+			<InitialDate>1708560000000</InitialDate>
+			<InitialTime>0.0</InitialTime>
+			<FinalDate>1708759740000</FinalDate>
+			<FinalTime>3329.0</FinalTime>
+		</ModelTimeProperties>
+		<BypassInitialScreen>false</BypassInitialScreen>
+	</SimulationExperiment>
+</Experiments>

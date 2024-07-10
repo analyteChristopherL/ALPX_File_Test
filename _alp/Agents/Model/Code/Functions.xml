@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Functions>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1714125431771</Id>
+		<Name><![CDATA[funInitialiseNodes]]></Name>
+		<X>1200</X>
+		<Y>130</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1714127012937</Id>
+		<Name><![CDATA[funInject0]]></Name>
+		<X>40</X>
+		<Y>565</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1714127022412</Id>
+		<Name><![CDATA[funInjectX]]></Name>
+		<X>40</X>
+		<Y>1140</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1714128834808</Id>
+		<Name><![CDATA[funInitialiseSegments]]></Name>
+		<X>1210</X>
+		<Y>150</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>ArrayList&lt;TimeBooking&gt;</ReturnType>
+		<Id>1714722572445</Id>
+		<Name><![CDATA[funTrainPrioritisation2]]></Name>
+		<X>1090</X>
+		<Y>260</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[booking1]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[booking2]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>Train</ReturnType>
+		<Id>1714726213451</Id>
+		<Name><![CDATA[funSubsequentTBAdjustments]]></Name>
+		<X>1100</X>
+		<Y>340</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[nodeBookingAdjustment]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[prioritySegmentBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>Train</ReturnType>
+		<Id>1715089002805</Id>
+		<Name><![CDATA[funNodeBookingAdjust3]]></Name>
+		<X>1090</X>
+		<Y>280</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[priorityBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[nonPriorityBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>ArrayList&lt;TimeBooking&gt;</ReturnType>
+		<Id>1715154143025</Id>
+		<Name><![CDATA[funFindTBNtoAdjustPassingTrains]]></Name>
+		<X>1100</X>
+		<Y>300</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[priorityBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[nonPriorityBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1715610031897</Id>
+		<Name><![CDATA[funConflictAvoidance1]]></Name>
+		<X>1070</X>
+		<Y>180</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>ArrayList&lt;TimeBooking&gt;</ReturnType>
+		<Id>1715610031899</Id>
+		<Name><![CDATA[funConflictDetection1]]></Name>
+		<X>1080</X>
+		<Y>220</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[sortedTimeBookings]]></Name>
+			<Type><![CDATA[ArrayList<TimeBooking>]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>ArrayList&lt;TimeBooking&gt;</ReturnType>
+		<Id>1715610031901</Id>
+		<Name><![CDATA[funFilterTimeBookings1]]></Name>
+		<X>1080</X>
+		<Y>200</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>Train</ReturnType>
+		<Id>1715610031903</Id>
+		<Name><![CDATA[funBookingAdjustment1]]></Name>
+		<X>1080</X>
+		<Y>240</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>false</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[booking1]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[booking2]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+		<ReturnType>ArrayList&lt;TimeBooking&gt;</ReturnType>
+		<Id>1715764802743</Id>
+		<Name><![CDATA[funFindTBNtoAdjustFollowingTrains]]></Name>
+		<X>1100</X>
+		<Y>320</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[priorityBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Parameter>
+			<Name><![CDATA[nonPriorityBooking]]></Name>
+			<Type><![CDATA[TimeBooking]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1717662459894</Id>
+		<Name><![CDATA[funUpdateLoopWaitingTimes]]></Name>
+		<X>1740</X>
+		<Y>50</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Parameter>
+			<Name><![CDATA[train]]></Name>
+			<Type><![CDATA[Train]]></Type>
+		</Parameter>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1717663228991</Id>
+		<Name><![CDATA[funInitialiseWaitingData]]></Name>
+		<X>1740</X>
+		<Y>30</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+		<Body xmlns:al="http://anylogic.com"/>
+	</Function>
+</Functions>
