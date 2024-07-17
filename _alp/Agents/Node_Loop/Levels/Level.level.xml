@@ -27,4 +27,30 @@
 		</ImageFiles>
 		<OriginalSize>false</OriginalSize>
 	</Image>
+	<Image>
+		<Id>1721224350133</Id>
+		<Name><![CDATA[image1]]></Name>
+		<X>380</X>
+		<Y>490</Y>
+		<Label>
+			<X>0</X>
+			<Y>-10</Y>
+		</Label>
+		<PublicFlag>true</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>false</ShowLabel>
+		<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+		<EmbeddedIcon>false</EmbeddedIcon>
+		<Z>0</Z>
+		<Width>1262</Width>
+		<Height>894</Height>
+		<Rotation>0.0</Rotation>
+		<ImageFiles>
+			<ImageResourceReference>
+				<PackageName>railyardexercise_crossingloops</PackageName>
+				<ClassName>Example problem of overtaking trains.png</ClassName>
+			</ImageResourceReference>
+		</ImageFiles>
+		<OriginalSize>false</OriginalSize>
+	</Image>
 </Presentation>
