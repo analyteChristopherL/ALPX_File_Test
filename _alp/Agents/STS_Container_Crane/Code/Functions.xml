@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Functions>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1721219775854</Id>
+		<Name><![CDATA[funGetLandsidePickUp]]></Name>
+		<X>80</X>
+		<Y>140</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+	</Function>
+	<Function AccessType="default" StaticFunction="false">
+		<ReturnModificator>VOID</ReturnModificator>
+		<ReturnType>double</ReturnType>
+		<Id>1721219796384</Id>
+		<Name><![CDATA[funGetLandsideDropOff]]></Name>
+		<X>80</X>
+		<Y>160</Y>
+		<Label>
+			<X>10</X>
+			<Y>0</Y>
+		</Label>
+		<PublicFlag>false</PublicFlag>
+		<PresentationFlag>true</PresentationFlag>
+		<ShowLabel>true</ShowLabel>
+	</Function>
+</Functions>
