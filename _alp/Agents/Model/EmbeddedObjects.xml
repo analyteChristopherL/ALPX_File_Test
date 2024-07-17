@@ -527,9 +527,6 @@ traceln("Delay Block - Train "+parTrainFromDistanceX+agent.getIndex()+" entered 
 			<Parameter>
 				<Name><![CDATA[parCapacity]]></Name>
 			</Parameter>
-			<Parameter>
-				<Name><![CDATA[parameter]]></Name>
-			</Parameter>
 		</Parameters>
 		<ReplicationFlag>true</ReplicationFlag>
 		<Replication Class="CodeValue">
